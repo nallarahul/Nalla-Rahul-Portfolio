@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg-dark: #08080c;
+    --color-amber-accent: #f59e0b;
+  }
+
+  html {
+    color-scheme: dark;
+    background-color: #08080c;
+  }
+
+  body {
+    background-color: #08080c;
+    color: #f4f4f6;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #08080c;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1e202e;
+    border-radius: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f59e0b;
+  }
+}
+
+/* Continuous Architectural Lines & Layout Containers */
+.architectural-container {
+  border-left: 1px solid rgba(30, 32, 46, 0.4);
+  border-right: 1px solid rgba(30, 32, 46, 0.4);
+}
+
+.editorial-divider {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(245,158,11,0.4) 0%, rgba(30,32,46,0.5) 40%, transparent 100%);
+}
+
+.amber-gradient-text {
+  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #f59e0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.editorial-title {
+  letter-spacing: -0.035em;
+  line-height: 0.96;
+}
+
+/* Accessible focus ring */
+*:focus-visible {
+  outline: 2px solid #f59e0b;
+  outline-offset: 3px;
+}
+
+/* Reduced motion overrides */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

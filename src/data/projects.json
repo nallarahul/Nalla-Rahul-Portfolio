@@ -1,0 +1,213 @@
+[
+  {
+    "id": "nexus-engine",
+    "title": "Nexus Engine",
+    "subtitle": "Distributed Task Orchestrator & System Visualizer",
+    "category": "backend",
+    "categoryLabel": "Distributed Systems",
+    "badge": "CENTERPIECE",
+    "summary": "A high-performance distributed task scheduler and orchestration platform built to process async job workflows with node fault-tolerance and dynamic metric visualizers.",
+    "problemSolved": "Traditional monolithic cron jobs struggle with scaling and isolated error recovery. Nexus Engine decouples job queues into fault-tolerant distributed worker nodes with centralized telemetry.",
+    "technicalChallenge": "Ensuring thread-safe state synchronization across distributed worker instances while streaming real-time queue health metrics over WebSockets.",
+    "outcomeKey": "Successfully architected modular task queues supporting dynamic retries, configurable concurrency limits, and live visual monitoring.",
+    "techStack": ["Java", "Spring Boot", "React", "Docker", "PostgreSQL", "REST APIs"],
+    "githubUrl": "https://github.com/rahul-nalla/nexus-engine-orchestrator",
+    "liveDemoUrl": "https://nexus-engine.demo.dev",
+    "highlights": [
+      "Fault-tolerant worker node pool architecture",
+      "Real-time dynamic telemetry and queue inspection",
+      "RESTful API endpoints for external service triggers",
+      "Containerized multi-service deployment setup"
+    ],
+    "terminalLogs": [
+      { "text": "[SYSTEM] Initializing distributed scheduler cluster...", "color": "text-steel-400" },
+      { "text": "[POSTGRES] Connected to primary task_state instance", "color": "text-steel-400" },
+      { "text": "[SPRING] Spawning 4 thread pool instances", "color": "text-amber-500/80" },
+      { "text": "[WEBSOCKET] Streaming metrics to React visualizer", "color": "text-steel-400" },
+      { "text": "[WORKER #1] Execution completed payload #99401", "color": "text-steel-400" }
+    ]
+  },
+  {
+    "id": "aura-ai-pipeline",
+    "title": "Aura AI",
+    "subtitle": "Intelligent NLP Data Processing Pipeline",
+    "category": "ai",
+    "categoryLabel": "Artificial Intelligence",
+    "badge": "AI / ML",
+    "summary": "An automated document ingestion and natural language sentiment analysis pipeline engineered for multi-format text analysis.",
+    "problemSolved": "Unstructured text documents often require manual categorization and entity extraction. Aura AI automates keyword extraction, sentiment analysis, and summarization.",
+    "technicalChallenge": "Optimizing token processing times for large batch document uploads using async worker queues and cached embeddings.",
+    "outcomeKey": "Streamlined multi-document text classification with standardized JSON API output structure.",
+    "techStack": ["Python", "Machine Learning", "NLP", "Hugging Face", "REST APIs"],
+    "githubUrl": "https://github.com/rahul-nalla/aura-ai-nlp-pipeline",
+    "liveDemoUrl": "https://aura-ai.demo.dev",
+    "highlights": [
+      "Automated document ingestion & summarization",
+      "Cached vector embeddings for sub-100ms classification",
+      "Standardized JSON payload responses for REST integration",
+      "Custom fine-tuned Transformer model layers"
+    ],
+    "terminalLogs": [
+      { "text": "[NLP] Tokenizing document batch #2048...", "color": "text-steel-400" },
+      { "text": "[HUGGINGFACE] Transformer model layers loaded", "color": "text-amber-500/80" },
+      { "text": "[VECTOR] Embedded 512 dimensions into FAISS index", "color": "text-steel-400" },
+      { "text": "[OUTPUT] Generated entity graph & sentiment score: 0.94", "color": "text-steel-400" }
+    ]
+  },
+  {
+    "id": "vanguard-telemetry",
+    "title": "Vanguard",
+    "subtitle": "Cloud Infrastructure & Telemetry Monitor",
+    "category": "infrastructure",
+    "categoryLabel": "Infrastructure",
+    "badge": "CLOUD & DEVOPS",
+    "summary": "A real-time telemetry visualizer for container metrics, system resource utilization, and operational status monitoring.",
+    "problemSolved": "Developers need a unified lightweight dashboard to observe service health metrics without navigating complex multi-tab management consoles.",
+    "technicalChallenge": "Handling high-frequency WebSocket metric streams without inducing UI re-render bottleneck latency.",
+    "outcomeKey": "Delivered a lightweight responsive dashboard with custom visualization widgets.",
+    "techStack": ["React", "Node.js", "PostgreSQL", "Docker", "AWS"],
+    "githubUrl": "https://github.com/rahul-nalla/vanguard-telemetry-dashboard",
+    "liveDemoUrl": "https://vanguard.demo.dev",
+    "highlights": [
+      "Sub-second container CPU & memory telemetry graphs",
+      "Automated alerts via CloudWatch integration",
+      "Responsive glassmorphism dashboard UI",
+      "Multi-container health check heartbeats"
+    ],
+    "terminalLogs": [
+      { "text": "[TELEMETRY] Listening on ws://0.0.0.0:8080/metrics...", "color": "text-steel-400" },
+      { "text": "[DOCKER] 8 containers reporting healthy status", "color": "text-amber-500/80" },
+      { "text": "[AWS CLOUDWATCH] Synced resource usage payload", "color": "text-steel-400" }
+    ]
+  },
+  {
+    "id": "omnistore-microservices",
+    "title": "OmniStore Engine",
+    "subtitle": "Microservices E-Commerce Backend",
+    "category": "backend",
+    "categoryLabel": "Backend Architecture",
+    "badge": "ENTERPRISE",
+    "summary": "A decoupled e-commerce core API managing product catalogs, order processing, inventory sync, and authentication services.",
+    "problemSolved": "Tightly coupled monoliths hinder independent deployment of inventory and payment workflows.",
+    "technicalChallenge": "Implementing transactional consistency across independent order and inventory databases using event messaging patterns.",
+    "outcomeKey": "Modular API structure allowing granular scaling of independent microservices.",
+    "techStack": ["Java", "Spring Boot", "MySQL", "MongoDB", "Docker", "CI/CD"],
+    "githubUrl": "https://github.com/rahul-nalla/omnistore-microservices",
+    "liveDemoUrl": "https://omnistore.demo.dev",
+    "highlights": [
+      "Decoupled microservice architecture with API Gateway",
+      "Event-driven inventory synchronization",
+      "MongoDB catalog store & MySQL transactional DB",
+      "Automated Docker deployment scripts"
+    ],
+    "terminalLogs": [
+      { "text": "[GATEWAY] Routing inbound request /api/v1/orders...", "color": "text-steel-400" },
+      { "text": "[AUTH] JWT verified for tenant #4902", "color": "text-steel-400" },
+      { "text": "[KAFKA] Emitted InventoryDeductedEvent", "color": "text-amber-500/80" }
+    ]
+  },
+  {
+    "id": "kubepulse-streamer",
+    "title": "KubePulse",
+    "subtitle": "Kubernetes Event Streamer & Log Aggregator",
+    "category": "infrastructure",
+    "categoryLabel": "Cloud & Kubernetes",
+    "badge": "DEVOPS",
+    "summary": "An event-driven log streaming daemon for Kubernetes pods that aggregates crash logs and container state transitions in real time.",
+    "problemSolved": "Pod restart loops often get lost in noisy log outputs. KubePulse isolates failing container states and surfaces immediate stack traces.",
+    "technicalChallenge": "Buffering continuous high-volume stdout log streams from multi-node clusters without consuming excess host node memory.",
+    "outcomeKey": "Reduced mean time to detection (MTTD) for pod crashes across staging environments.",
+    "techStack": ["Node.js", "Docker", "GitHub Actions", "AWS", "REST APIs"],
+    "githubUrl": "https://github.com/rahul-nalla/kubepulse-log-streamer",
+    "liveDemoUrl": "https://kubepulse.demo.dev",
+    "highlights": [
+      "Real-time K8s pod event streaming",
+      "Automated crashloop backoff detection",
+      "Lightweight memory footprint (<40MB)",
+      "Slack & Webhook notification hooks"
+    ],
+    "terminalLogs": [
+      { "text": "[KUBE-API] Connected to cluster master node", "color": "text-steel-400" },
+      { "text": "[WATCH] Monitoring namespace: production-apps", "color": "text-amber-500/80" },
+      { "text": "[ALERT] Pod api-service-v2 restarted (exit status 137)", "color": "text-steel-400" }
+    ]
+  },
+  {
+    "id": "aetherdb-profiler",
+    "title": "AetherDB Profiler",
+    "subtitle": "SQL Query Performance & Index Analyzer",
+    "category": "backend",
+    "categoryLabel": "Database Systems",
+    "badge": "DATA TOOL",
+    "summary": "A query analyzer tool that generates query execution plans, identifies missing indexes, and highlights slow join queries in PostgreSQL databases.",
+    "problemSolved": "Developers often push un-indexed join queries that degrade database performance under heavy production concurrency.",
+    "technicalChallenge": "Parsing complex SQL AST trees to recommend optimal composite indexes without running full table scans.",
+    "outcomeKey": "Helped optimize database query latencies by identifying unindexed foreign key relationships.",
+    "techStack": ["Python", "SQL", "PostgreSQL", "React", "REST APIs"],
+    "githubUrl": "https://github.com/rahul-nalla/aetherdb-query-profiler",
+    "liveDemoUrl": "https://aetherdb.demo.dev",
+    "highlights": [
+      "Automated EXPLAIN ANALYZE tree visualization",
+      "Composite index recommendations generator",
+      "PostgreSQL query execution cost graph",
+      "Slow query alert logs export"
+    ],
+    "terminalLogs": [
+      { "text": "[SQL-PARSER] Analyzing AST tree for query #892...", "color": "text-steel-400" },
+      { "text": "[EXPLAIN] Sequential scan detected on table: orders (1.2M rows)", "color": "text-amber-500/80" },
+      { "text": "[INDEX-SUGGEST] CREATE INDEX idx_orders_customer_id ON orders(customer_id)", "color": "text-steel-400" }
+    ]
+  },
+  {
+    "id": "cipherguard-auth",
+    "title": "CipherGuard Auth",
+    "subtitle": "Zero-Trust Identity & Token Manager",
+    "category": "backend",
+    "categoryLabel": "Security & Identity",
+    "badge": "SECURITY",
+    "summary": "A lightweight OAuth2 & JWT authentication service providing RBAC role management, token rotation, and rate-limiting middleware.",
+    "problemSolved": "Building custom authentication for every microservice risks security flaws and duplicated key management code.",
+    "technicalChallenge": "Implementing secure refresh token rotation with sliding expiration windows and instant revocation blacklists.",
+    "outcomeKey": "Centralized authentication engine providing single-sign-on (SSO) integration across microservices.",
+    "techStack": ["Java", "Spring Boot", "PostgreSQL", "REST APIs", "CI/CD"],
+    "githubUrl": "https://github.com/rahul-nalla/cipherguard-auth-service",
+    "liveDemoUrl": "https://cipherguard.demo.dev",
+    "highlights": [
+      "OAuth2 & JWT bearer token validation",
+      "Role-Based Access Control (RBAC) middleware",
+      "Redis-backed token revocation blacklist",
+      "Rate-limiting protection against brute-force attacks"
+    ],
+    "terminalLogs": [
+      { "text": "[AUTH-SERVICE] Initialized RSA 4096-bit public key pair", "color": "text-steel-400" },
+      { "text": "[JWT] Minted access token for user_id: 88402 (exp: 15m)", "color": "text-amber-500/80" },
+      { "text": "[RATE-LIMIT] IP 192.168.1.4 throttled (5 attempts/min exceeded)", "color": "text-steel-400" }
+    ]
+  },
+  {
+    "id": "dataflow-etl-pipeline",
+    "title": "DataFlow Stream",
+    "subtitle": "Real-Time Event Stream Transformation Pipeline",
+    "category": "ai",
+    "categoryLabel": "Data Engineering",
+    "badge": "DATA PIPELINE",
+    "summary": "A distributed data processing pipeline built to extract, transform, and load high-velocity stream metrics into analytical data warehouses.",
+    "problemSolved": "Batch processing introduces data freshness delays for live analytics dashboards.",
+    "technicalChallenge": "Structuring streaming window aggregations to handle out-of-order event timestamps without data duplication.",
+    "outcomeKey": "Enabled real-time streaming analytics with sub-second event transformation latency.",
+    "techStack": ["Python", "Data Processing", "SQL", "PostgreSQL", "AWS"],
+    "githubUrl": "https://github.com/rahul-nalla/dataflow-etl-stream",
+    "liveDemoUrl": "https://dataflow.demo.dev",
+    "highlights": [
+      "Real-time event transformation & aggregation",
+      "Out-of-order event timestamp reconciliation",
+      "Automated schema validation on ingestion",
+      "S3 & PostgreSQL analytical sink integrations"
+    ],
+    "terminalLogs": [
+      { "text": "[STREAM-INGEST] Processing window 18:35:00 - 18:35:05...", "color": "text-steel-400" },
+      { "text": "[TRANSFORM] Calculated 14,200 events/sec aggregate", "color": "text-amber-500/80" },
+      { "text": "[SINK] Bulk inserted 71,000 transformed records to PostgreSQL", "color": "text-steel-400" }
+    ]
+  }
+]

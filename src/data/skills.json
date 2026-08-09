@@ -1,0 +1,82 @@
+[
+  {
+    "id": "java",
+    "name": "Java",
+    "iconUrl": "/skills/java.svg"
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "iconUrl": "/skills/javascript.svg"
+  },
+  {
+    "id": "python",
+    "name": "Python",
+    "iconUrl": "/skills/python.svg"
+  },
+  {
+    "id": "springboot",
+    "name": "Spring Boot",
+    "iconUrl": "/skills/springboot.svg"
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "iconUrl": "/skills/nodejs.svg"
+  },
+  {
+    "id": "react",
+    "name": "React",
+    "iconUrl": "/skills/react.svg"
+  },
+  {
+    "id": "nextjs",
+    "name": "Next.js",
+    "iconUrl": "/skills/nextjs.svg"
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "iconUrl": "/skills/postgresql.svg"
+  },
+  {
+    "id": "mysql",
+    "name": "MySQL",
+    "iconUrl": "/skills/mysql.svg"
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "iconUrl": "/skills/mongodb.svg"
+  },
+  {
+    "id": "docker",
+    "name": "Docker",
+    "iconUrl": "/skills/docker-svgrepo-com.svg"
+  },
+  {
+    "id": "aws",
+    "name": "AWS",
+    "iconUrl": "/skills/aws.svg"
+  },
+  {
+    "id": "git",
+    "name": "Git & GitHub",
+    "iconUrl": "/skills/git.svg"
+  },
+  {
+    "id": "restapi",
+    "name": "REST APIs",
+    "iconUrl": "/skills/restapi.svg"
+  },
+  {
+    "id": "html5",
+    "name": "HTML5",
+    "iconUrl": "/skills/html5.svg"
+  },
+  {
+    "id": "css3",
+    "name": "CSS3",
+    "iconUrl": "/skills/css3.svg"
+  }
+]
