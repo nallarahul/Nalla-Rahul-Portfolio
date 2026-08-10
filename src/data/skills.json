@@ -1,5 +1,10 @@
 [
   {
+    "id": "python",
+    "name": "Python",
+    "iconUrl": "/skills/python.svg"
+  },
+  {
     "id": "java",
     "name": "Java",
     "iconUrl": "/skills/java.svg"
@@ -10,14 +15,39 @@
     "iconUrl": "/skills/javascript.svg"
   },
   {
-    "id": "python",
-    "name": "Python",
-    "iconUrl": "/skills/python.svg"
+    "id": "typescript",
+    "name": "TypeScript",
+    "iconUrl": "/skills/typescript.svg"
   },
   {
-    "id": "springboot",
-    "name": "Spring Boot",
-    "iconUrl": "/skills/springboot.svg"
+    "id": "html5",
+    "name": "HTML",
+    "iconUrl": "/skills/html5.svg"
+  },
+  {
+    "id": "css3",
+    "name": "CSS",
+    "iconUrl": "/skills/css3.svg"
+  },
+  {
+    "id": "react",
+    "name": "React.js",
+    "iconUrl": "/skills/react-logo.svg"
+  },
+  {
+    "id": "nextjs",
+    "name": "Next.js",
+    "iconUrl": "/skills/nextjs-logo.svg"
+  },
+  {
+    "id": "tailwindcss",
+    "name": "Tailwind CSS",
+    "iconUrl": "/skills/tailwind.svg"
+  },
+  {
+    "id": "streamlit",
+    "name": "Streamlit",
+    "iconUrl": "/skills/Streamlit.svg"
   },
   {
     "id": "nodejs",
@@ -25,19 +55,14 @@
     "iconUrl": "/skills/nodejs.svg"
   },
   {
-    "id": "react",
-    "name": "React",
-    "iconUrl": "/skills/react.svg"
+    "id": "restapi",
+    "name": "REST APIs",
+    "iconUrl": "/skills/restapi.svg"
   },
   {
-    "id": "nextjs",
-    "name": "Next.js",
-    "iconUrl": "/skills/nextjs.svg"
-  },
-  {
-    "id": "postgresql",
-    "name": "PostgreSQL",
-    "iconUrl": "/skills/postgresql.svg"
+    "id": "flaskapi",
+    "name": "Flask",
+    "iconUrl": "/skills/flask.svg"
   },
   {
     "id": "mysql",
@@ -50,33 +75,68 @@
     "iconUrl": "/skills/mongodb.svg"
   },
   {
-    "id": "docker",
-    "name": "Docker",
-    "iconUrl": "/skills/docker-svgrepo-com.svg"
+    "id": "firebase",
+    "name": "Firebase",
+    "iconUrl": "/skills/firebase.svg"
+  },
+  {
+    "id": "langchain",
+    "name": "LangChain",
+    "iconUrl": "/skills/langchain.png"
+  },
+  {
+    "id": "numpy",
+    "name": "NumPy",
+    "iconUrl": "/skills/numpy.svg"
+  },
+  {
+    "id": "pandas",
+    "name": "Pandas",
+    "iconUrl": "/skills/pandas.jpg"
+  },
+  {
+    "id": "tensorflow",
+    "name": "TensorFlow",
+    "iconUrl": "/skills/tensorflow.svg"
+  },
+  {
+    "id": "scikitlearn",
+    "name": "Scikit-learn",
+    "iconUrl": "/skills/scikit-learn.jpg"
+  },
+  {
+    "id": "postman",
+    "name": "Postman",
+    "iconUrl": "/skills/postman.svg"
+  },
+  {
+    "id": "powerbi",
+    "name": "Power BI",
+    "iconUrl": "/skills/powerbi.svg"
+  },
+  {
+    "id": "figma",
+    "name": "Figma",
+    "iconUrl": "/skills/figma.svg"
+  },
+  {
+    "id": "git",
+    "name": "Git",
+    "iconUrl": "/skills/git.svg"
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "iconUrl": "/skills/github.svg"
   },
   {
     "id": "aws",
     "name": "AWS",
-    "iconUrl": "/skills/aws.svg"
-  },
+    "iconUrl": "/skills/aws.png"
+  }, 
   {
-    "id": "git",
-    "name": "Git & GitHub",
-    "iconUrl": "/skills/git.svg"
-  },
-  {
-    "id": "restapi",
-    "name": "REST APIs",
-    "iconUrl": "/skills/restapi.svg"
-  },
-  {
-    "id": "html5",
-    "name": "HTML5",
-    "iconUrl": "/skills/html5.svg"
-  },
-  {
-    "id": "css3",
-    "name": "CSS3",
-    "iconUrl": "/skills/css3.svg"
+    "id": "docker",
+    "name": "Docker",
+    "iconUrl": "/skills/docker.svg"
   }
 ]
