@@ -1,26 +1,27 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { motion, useScroll, useSpring } from 'framer-motion';
 
+/**
+ * Ultra-Smooth ScrollProgress
+ * Uses Framer Motion GPU-accelerated scaleX compositor transform & spring physics
+ * Bypasses React state re-renders and CSS layout reflows for liquid-smooth 60/120fps progress.
+ */
 export default function ScrollProgress() {
-  const [scrollProgress, setScrollProgress] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-      if (totalHeight > 0) {
-        const currentProgress = (window.scrollY / totalHeight) * 100;
-        setScrollProgress(currentProgress);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 300,
+    damping: 30,
+    restDelta: 0.0001,
+  });
 
   return (
-    <div className="fixed top-0 left-0 w-full h-[2px] z-[100] bg-transparent pointer-events-none">
-      <div
-        className="h-full bg-amber-500 transition-all duration-150 ease-out shadow-[0_0_8px_#f59e0b]"
-        style={{ width: `${scrollProgress}%` }}
+    <div className="fixed top-0 left-0 right-0 h-[2.5px] z-[100000] bg-transparent pointer-events-none">
+      <motion.div
+        className="h-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 shadow-[0_0_10px_#f59e0b,0_0_4px_#f59e0b]"
+        style={{
+          scaleX,
+          transformOrigin: '0%',
+        }}
       />
     </div>
   );
