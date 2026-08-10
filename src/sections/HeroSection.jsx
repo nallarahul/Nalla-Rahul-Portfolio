@@ -117,8 +117,8 @@ export default function HeroSection() {
             <span className="text-steel-400">// SOFTWARE DEVELOPER</span>
           </div>
           <div className="hidden sm:flex items-center gap-6 text-[11px]">
-            <span>LOC: GLOBAL / REMOTE</span>
-            <span className="text-amber-500">STATUS: AVAILABLE FOR ROLES</span>
+            <span>Location: {portfolioData.personal.location}</span>
+            <span className="text-amber-500">STATUS: {portfolioData.personal.status}</span>
           </div>
         </motion.div>
 
