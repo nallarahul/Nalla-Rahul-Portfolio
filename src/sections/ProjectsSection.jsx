@@ -17,9 +17,8 @@ export default function ProjectsSection() {
 
   const categories = [
     { id: 'all', label: 'All Projects' },
-    { id: 'backend', label: 'Backend & Systems' },
-    { id: 'ai', label: 'AI & Data Science' },
-    { id: 'infrastructure', label: 'Infrastructure & DevOps' },
+    { id: 'web-dev', label: 'Web Development' },
+    { id: 'ai', label: 'AI/ML' },
   ];
 
   // Filter projects by category
@@ -45,11 +44,11 @@ export default function ProjectsSection() {
               <span>02. PROJECTS &amp; ARCHITECTURAL CASE STUDIES</span>
             </ClipReveal>
             <BlurReveal as="h2" delay={0.1} className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-steel-100 tracking-tight">
-              Selected Projects &amp; Systems
+              Projects &amp; Systems
             </BlurReveal>
           </div>
           <BlurReveal delay={0.2} className="font-mono text-xs text-steel-400 mt-4 md:mt-0 max-w-md leading-relaxed">
-            Side-scrolling horizontal showcase of 8+ full-stack systems, distributed task orchestrators, and AI processing pipelines. Click any card to inspect full architecture details.
+            A collection of projects where I turn ideas into real, working systems — spanning full-stack development, distributed systems, and AI.
           </BlurReveal>
         </div>
 

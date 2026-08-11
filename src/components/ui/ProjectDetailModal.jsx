@@ -165,16 +165,18 @@ export default function ProjectDetailModal({ project, isOpen, onClose }) {
                       <span>Source Repository</span>
                     </MagneticButton>
 
-                    <MagneticButton
-                      as="a"
-                      href={project.liveDemoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded bg-amber-500 hover:bg-amber-600 text-bg-dark font-mono font-bold text-xs transition-colors shadow-[0_0_20px_rgba(245,158,11,0.2)]"
-                    >
-                      <span>Interactive Demo</span>
-                      <ExternalLink className="w-4 h-4" />
-                    </MagneticButton>
+                    {project.liveDemoUrl && (
+                      <MagneticButton
+                        as="a"
+                        href={project.liveDemoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded bg-amber-500 hover:bg-amber-600 text-bg-dark font-mono font-bold text-xs transition-colors shadow-[0_0_20px_rgba(245,158,11,0.2)]"
+                      >
+                        <span>Interactive Demo</span>
+                        <ExternalLink className="w-4 h-4" />
+                      </MagneticButton>
+                    )}
                   </div>
                 </div>
 
@@ -228,23 +230,6 @@ export default function ProjectDetailModal({ project, isOpen, onClose }) {
                     <div className="px-4 py-2.5 bg-bg-surface/50 border-t border-bg-border/60 text-[10px] text-steel-400 flex justify-between">
                       <span>BUILD: OK</span>
                       <span>RAHUL NALLA // SPEC</span>
-                    </div>
-                  </div>
-
-                  {/* Quick System Spec card */}
-                  <div className="p-4 rounded bg-bg-surface border border-bg-border/70 font-mono text-xs space-y-2">
-                    <div className="text-[10px] text-steel-400 font-semibold uppercase">SYSTEM ARCHITECTURE SPEC</div>
-                    <div className="flex justify-between text-steel-300">
-                      <span>Category:</span>
-                      <span className="text-amber-400">{project.categoryLabel || project.category}</span>
-                    </div>
-                    <div className="flex justify-between text-steel-300">
-                      <span>Primary Language:</span>
-                      <span className="text-steel-100">{project.techStack[0]}</span>
-                    </div>
-                    <div className="flex justify-between text-steel-300">
-                      <span>Deployment:</span>
-                      <span className="text-steel-100">Docker / Microservices</span>
                     </div>
                   </div>
                 </div>

@@ -1,213 +1,262 @@
 [
   {
-    "id": "nexus-engine",
-    "title": "Nexus Engine",
-    "subtitle": "Distributed Task Orchestrator & System Visualizer",
-    "category": "backend",
-    "categoryLabel": "Distributed Systems",
-    "badge": "CENTERPIECE",
-    "summary": "A high-performance distributed task scheduler and orchestration platform built to process async job workflows with node fault-tolerance and dynamic metric visualizers.",
-    "problemSolved": "Traditional monolithic cron jobs struggle with scaling and isolated error recovery. Nexus Engine decouples job queues into fault-tolerant distributed worker nodes with centralized telemetry.",
-    "technicalChallenge": "Ensuring thread-safe state synchronization across distributed worker instances while streaming real-time queue health metrics over WebSockets.",
-    "outcomeKey": "Successfully architected modular task queues supporting dynamic retries, configurable concurrency limits, and live visual monitoring.",
-    "techStack": ["Java", "Spring Boot", "React", "Docker", "PostgreSQL", "REST APIs"],
-    "githubUrl": "https://github.com/rahul-nalla/nexus-engine-orchestrator",
-    "liveDemoUrl": "https://nexus-engine.demo.dev",
-    "highlights": [
-      "Fault-tolerant worker node pool architecture",
-      "Real-time dynamic telemetry and queue inspection",
-      "RESTful API endpoints for external service triggers",
-      "Containerized multi-service deployment setup"
-    ],
-    "terminalLogs": [
-      { "text": "[SYSTEM] Initializing distributed scheduler cluster...", "color": "text-steel-400" },
-      { "text": "[POSTGRES] Connected to primary task_state instance", "color": "text-steel-400" },
-      { "text": "[SPRING] Spawning 4 thread pool instances", "color": "text-amber-500/80" },
-      { "text": "[WEBSOCKET] Streaming metrics to React visualizer", "color": "text-steel-400" },
-      { "text": "[WORKER #1] Execution completed payload #99401", "color": "text-steel-400" }
-    ]
-  },
-  {
-    "id": "aura-ai-pipeline",
-    "title": "Aura AI",
-    "subtitle": "Intelligent NLP Data Processing Pipeline",
+    "id": "prepwise",
+    "title": "PrepWise",
+    "subtitle": "AI-Powered Personalized Mock Interview Platform",
     "category": "ai",
     "categoryLabel": "Artificial Intelligence",
-    "badge": "AI / ML",
-    "summary": "An automated document ingestion and natural language sentiment analysis pipeline engineered for multi-format text analysis.",
-    "problemSolved": "Unstructured text documents often require manual categorization and entity extraction. Aura AI automates keyword extraction, sentiment analysis, and summarization.",
-    "technicalChallenge": "Optimizing token processing times for large batch document uploads using async worker queues and cached embeddings.",
-    "outcomeKey": "Streamlined multi-document text classification with standardized JSON API output structure.",
-    "techStack": ["Python", "Machine Learning", "NLP", "Hugging Face", "REST APIs"],
-    "githubUrl": "https://github.com/rahul-nalla/aura-ai-nlp-pipeline",
-    "liveDemoUrl": "https://aura-ai.demo.dev",
+    "badge": "AI / INTERVIEW",
+    "summary": "An AI-powered mock interview platform that generates personalized interviews based on user preferences or uploaded resumes.",
+    "problemSolved": "Generic mock interviews fail to adapt to an individual's experience and background. PrepWise uses resume information to generate personalized interview questions and provide instant feedback.",
+    "technicalChallenge": "Integrating resume parsing, AI-driven question generation, and real-time interview feedback into a seamless full-stack application.",
+    "outcomeKey": "Launched an AI-powered interview platform that attracted 30+ users within the first few days and enabled personalized interview preparation.",
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Firebase",
+      "Gemini AI",
+      "Vapi AI"
+    ],
+    "githubUrl": "https://github.com/nallarahul/PrepWise",
+    "liveDemoUrl": "https://prepwisemock.vercel.app/",
     "highlights": [
-      "Automated document ingestion & summarization",
-      "Cached vector embeddings for sub-100ms classification",
-      "Standardized JSON payload responses for REST integration",
-      "Custom fine-tuned Transformer model layers"
+      "AI-generated personalized mock interviews",
+      "Resume PDF parsing for tailored questions",
+      "Dynamic AI-driven question generation",
+      "Instant interview feedback",
+      "30+ users within the first few days of launch"
     ],
     "terminalLogs": [
-      { "text": "[NLP] Tokenizing document batch #2048...", "color": "text-steel-400" },
-      { "text": "[HUGGINGFACE] Transformer model layers loaded", "color": "text-amber-500/80" },
-      { "text": "[VECTOR] Embedded 512 dimensions into FAISS index", "color": "text-steel-400" },
-      { "text": "[OUTPUT] Generated entity graph & sentiment score: 0.94", "color": "text-steel-400" }
+      {
+        "text": "[PREPWISE] Initializing personalized interview engine...",
+        "color": "text-steel-400"
+      },
+      {
+        "text": "[RESUME] Parsing uploaded PDF resume...",
+        "color": "text-steel-400"
+      },
+      {
+        "text": "[GEMINI] Generating tailored interview questions...",
+        "color": "text-amber-500/80"
+      },
+      {
+        "text": "[VAPI] Interview session initialized successfully",
+        "color": "text-steel-400"
+      },
+      {
+        "text": "[FEEDBACK] Generating instant interview evaluation...",
+        "color": "text-steel-400"
+      }
     ]
   },
   {
-    "id": "vanguard-telemetry",
-    "title": "Vanguard",
-    "subtitle": "Cloud Infrastructure & Telemetry Monitor",
-    "category": "infrastructure",
-    "categoryLabel": "Infrastructure",
-    "badge": "CLOUD & DEVOPS",
-    "summary": "A real-time telemetry visualizer for container metrics, system resource utilization, and operational status monitoring.",
-    "problemSolved": "Developers need a unified lightweight dashboard to observe service health metrics without navigating complex multi-tab management consoles.",
-    "technicalChallenge": "Handling high-frequency WebSocket metric streams without inducing UI re-render bottleneck latency.",
-    "outcomeKey": "Delivered a lightweight responsive dashboard with custom visualization widgets.",
-    "techStack": ["React", "Node.js", "PostgreSQL", "Docker", "AWS"],
-    "githubUrl": "https://github.com/rahul-nalla/vanguard-telemetry-dashboard",
-    "liveDemoUrl": "https://vanguard.demo.dev",
-    "highlights": [
-      "Sub-second container CPU & memory telemetry graphs",
-      "Automated alerts via CloudWatch integration",
-      "Responsive glassmorphism dashboard UI",
-      "Multi-container health check heartbeats"
-    ],
-    "terminalLogs": [
-      { "text": "[TELEMETRY] Listening on ws://0.0.0.0:8080/metrics...", "color": "text-steel-400" },
-      { "text": "[DOCKER] 8 containers reporting healthy status", "color": "text-amber-500/80" },
-      { "text": "[AWS CLOUDWATCH] Synced resource usage payload", "color": "text-steel-400" }
-    ]
-  },
-  {
-    "id": "omnistore-microservices",
-    "title": "OmniStore Engine",
-    "subtitle": "Microservices E-Commerce Backend",
-    "category": "backend",
-    "categoryLabel": "Backend Architecture",
-    "badge": "ENTERPRISE",
-    "summary": "A decoupled e-commerce core API managing product catalogs, order processing, inventory sync, and authentication services.",
-    "problemSolved": "Tightly coupled monoliths hinder independent deployment of inventory and payment workflows.",
-    "technicalChallenge": "Implementing transactional consistency across independent order and inventory databases using event messaging patterns.",
-    "outcomeKey": "Modular API structure allowing granular scaling of independent microservices.",
-    "techStack": ["Java", "Spring Boot", "MySQL", "MongoDB", "Docker", "CI/CD"],
-    "githubUrl": "https://github.com/rahul-nalla/omnistore-microservices",
-    "liveDemoUrl": "https://omnistore.demo.dev",
-    "highlights": [
-      "Decoupled microservice architecture with API Gateway",
-      "Event-driven inventory synchronization",
-      "MongoDB catalog store & MySQL transactional DB",
-      "Automated Docker deployment scripts"
-    ],
-    "terminalLogs": [
-      { "text": "[GATEWAY] Routing inbound request /api/v1/orders...", "color": "text-steel-400" },
-      { "text": "[AUTH] JWT verified for tenant #4902", "color": "text-steel-400" },
-      { "text": "[KAFKA] Emitted InventoryDeductedEvent", "color": "text-amber-500/80" }
-    ]
-  },
-  {
-    "id": "kubepulse-streamer",
-    "title": "KubePulse",
-    "subtitle": "Kubernetes Event Streamer & Log Aggregator",
-    "category": "infrastructure",
-    "categoryLabel": "Cloud & Kubernetes",
-    "badge": "DEVOPS",
-    "summary": "An event-driven log streaming daemon for Kubernetes pods that aggregates crash logs and container state transitions in real time.",
-    "problemSolved": "Pod restart loops often get lost in noisy log outputs. KubePulse isolates failing container states and surfaces immediate stack traces.",
-    "technicalChallenge": "Buffering continuous high-volume stdout log streams from multi-node clusters without consuming excess host node memory.",
-    "outcomeKey": "Reduced mean time to detection (MTTD) for pod crashes across staging environments.",
-    "techStack": ["Node.js", "Docker", "GitHub Actions", "AWS", "REST APIs"],
-    "githubUrl": "https://github.com/rahul-nalla/kubepulse-log-streamer",
-    "liveDemoUrl": "https://kubepulse.demo.dev",
-    "highlights": [
-      "Real-time K8s pod event streaming",
-      "Automated crashloop backoff detection",
-      "Lightweight memory footprint (<40MB)",
-      "Slack & Webhook notification hooks"
-    ],
-    "terminalLogs": [
-      { "text": "[KUBE-API] Connected to cluster master node", "color": "text-steel-400" },
-      { "text": "[WATCH] Monitoring namespace: production-apps", "color": "text-amber-500/80" },
-      { "text": "[ALERT] Pod api-service-v2 restarted (exit status 137)", "color": "text-steel-400" }
-    ]
-  },
-  {
-    "id": "aetherdb-profiler",
-    "title": "AetherDB Profiler",
-    "subtitle": "SQL Query Performance & Index Analyzer",
-    "category": "backend",
-    "categoryLabel": "Database Systems",
-    "badge": "DATA TOOL",
-    "summary": "A query analyzer tool that generates query execution plans, identifies missing indexes, and highlights slow join queries in PostgreSQL databases.",
-    "problemSolved": "Developers often push un-indexed join queries that degrade database performance under heavy production concurrency.",
-    "technicalChallenge": "Parsing complex SQL AST trees to recommend optimal composite indexes without running full table scans.",
-    "outcomeKey": "Helped optimize database query latencies by identifying unindexed foreign key relationships.",
-    "techStack": ["Python", "SQL", "PostgreSQL", "React", "REST APIs"],
-    "githubUrl": "https://github.com/rahul-nalla/aetherdb-query-profiler",
-    "liveDemoUrl": "https://aetherdb.demo.dev",
-    "highlights": [
-      "Automated EXPLAIN ANALYZE tree visualization",
-      "Composite index recommendations generator",
-      "PostgreSQL query execution cost graph",
-      "Slow query alert logs export"
-    ],
-    "terminalLogs": [
-      { "text": "[SQL-PARSER] Analyzing AST tree for query #892...", "color": "text-steel-400" },
-      { "text": "[EXPLAIN] Sequential scan detected on table: orders (1.2M rows)", "color": "text-amber-500/80" },
-      { "text": "[INDEX-SUGGEST] CREATE INDEX idx_orders_customer_id ON orders(customer_id)", "color": "text-steel-400" }
-    ]
-  },
-  {
-    "id": "cipherguard-auth",
-    "title": "CipherGuard Auth",
-    "subtitle": "Zero-Trust Identity & Token Manager",
-    "category": "backend",
-    "categoryLabel": "Security & Identity",
-    "badge": "SECURITY",
-    "summary": "A lightweight OAuth2 & JWT authentication service providing RBAC role management, token rotation, and rate-limiting middleware.",
-    "problemSolved": "Building custom authentication for every microservice risks security flaws and duplicated key management code.",
-    "technicalChallenge": "Implementing secure refresh token rotation with sliding expiration windows and instant revocation blacklists.",
-    "outcomeKey": "Centralized authentication engine providing single-sign-on (SSO) integration across microservices.",
-    "techStack": ["Java", "Spring Boot", "PostgreSQL", "REST APIs", "CI/CD"],
-    "githubUrl": "https://github.com/rahul-nalla/cipherguard-auth-service",
-    "liveDemoUrl": "https://cipherguard.demo.dev",
-    "highlights": [
-      "OAuth2 & JWT bearer token validation",
-      "Role-Based Access Control (RBAC) middleware",
-      "Redis-backed token revocation blacklist",
-      "Rate-limiting protection against brute-force attacks"
-    ],
-    "terminalLogs": [
-      { "text": "[AUTH-SERVICE] Initialized RSA 4096-bit public key pair", "color": "text-steel-400" },
-      { "text": "[JWT] Minted access token for user_id: 88402 (exp: 15m)", "color": "text-amber-500/80" },
-      { "text": "[RATE-LIMIT] IP 192.168.1.4 throttled (5 attempts/min exceeded)", "color": "text-steel-400" }
-    ]
-  },
-  {
-    "id": "dataflow-etl-pipeline",
-    "title": "DataFlow Stream",
-    "subtitle": "Real-Time Event Stream Transformation Pipeline",
+    "id": "newsguard-ai",
+    "title": "NewsGuard AI",
+    "subtitle": "BERT-Powered Fake News Detection Browser Extension",
     "category": "ai",
-    "categoryLabel": "Data Engineering",
-    "badge": "DATA PIPELINE",
-    "summary": "A distributed data processing pipeline built to extract, transform, and load high-velocity stream metrics into analytical data warehouses.",
-    "problemSolved": "Batch processing introduces data freshness delays for live analytics dashboards.",
-    "technicalChallenge": "Structuring streaming window aggregations to handle out-of-order event timestamps without data duplication.",
-    "outcomeKey": "Enabled real-time streaming analytics with sub-second event transformation latency.",
-    "techStack": ["Python", "Data Processing", "SQL", "PostgreSQL", "AWS"],
-    "githubUrl": "https://github.com/rahul-nalla/dataflow-etl-stream",
-    "liveDemoUrl": "https://dataflow.demo.dev",
+    "categoryLabel": "Natural Language Processing",
+    "badge": "AI / NLP",
+    "summary": "A Firefox browser extension that detects fake news in real time using a BERT-based NLP model trained on the FakeNewsNet dataset.",
+    "problemSolved": "Users can encounter misleading or fabricated news while browsing the web. NewsGuard AI provides real-time news verification directly inside the browser.",
+    "technicalChallenge": "Integrating a trained BERT NLP model with a browser extension through a Flask backend while maintaining an efficient real-time verification workflow.",
+    "outcomeKey": "Built a real-time fake news detection system achieving 97.37% accuracy on the trained NLP model.",
+    "techStack": [
+      "Manifest V2",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Python",
+      "Flask",
+      "Natural Language Processing",
+      "BERT",
+      "Hugging Face"
+    ],
+    "githubUrl": "https://github.com/nallarahul/NewsGuard-AI",
+    "liveDemoUrl": "https://addons.mozilla.org/en-GB/firefox/addon/newsguard-ai/",
     "highlights": [
-      "Real-time event transformation & aggregation",
-      "Out-of-order event timestamp reconciliation",
-      "Automated schema validation on ingestion",
-      "S3 & PostgreSQL analytical sink integrations"
+      "97.37% fake news detection accuracy",
+      "BERT-based NLP model trained on FakeNewsNet",
+      "Real-time news verification inside Firefox",
+      "Hugging Face-hosted machine learning model",
+      "Flask backend for model inference"
     ],
     "terminalLogs": [
-      { "text": "[STREAM-INGEST] Processing window 18:35:00 - 18:35:05...", "color": "text-steel-400" },
-      { "text": "[TRANSFORM] Calculated 14,200 events/sec aggregate", "color": "text-amber-500/80" },
-      { "text": "[SINK] Bulk inserted 71,000 transformed records to PostgreSQL", "color": "text-steel-400" }
+      {
+        "text": "[NEWSGUARD] Initializing browser verification engine...",
+        "color": "text-steel-400"
+      },
+      {
+        "text": "[BERT] Loading fake news classification model...",
+        "color": "text-amber-500/80"
+      },
+      {
+        "text": "[HUGGINGFACE] ML model endpoint connected",
+        "color": "text-steel-400"
+      },
+      {
+        "text": "[FLASK] Prediction API ready for incoming requests",
+        "color": "text-steel-400"
+      },
+      {
+        "text": "[DETECTION] Real-time news verification completed",
+        "color": "text-steel-400"
+      }
+    ]
+  },
+  {
+    "id": "autonomous-qa-agent",
+    "title": "Autonomous QA Agent",
+    "subtitle": "RAG-Based Autonomous Test Scenario & Selenium Generator",
+    "category": "ai",
+    "categoryLabel": "AI & Test Automation",
+    "badge": "AI / RAG",
+    "summary": "A full-stack AI application that uses RAG, vector embeddings, and a dual-agent architecture to generate test scenarios from technical documentation and convert them into executable Selenium scripts.",
+    "problemSolved": "Manual test planning and test-script creation can be repetitive and time-consuming. The Autonomous QA Agent automates documentation analysis, test scenario generation, and Selenium script creation.",
+    "technicalChallenge": "Combining document retrieval, vector embeddings, autonomous reasoning, HTML DOM analysis, and code generation into a coordinated dual-agent testing workflow.",
+    "outcomeKey": "Reduced manual test creation effort by 40% through autonomous test scenario generation and Selenium script conversion.",
+    "techStack": [
+      "RAG",
+      "LangChain",
+      "ChromaDB",
+      "Llama 3",
+      "FastAPI",
+      "Streamlit",
+      "Selenium",
+      "Vector Embeddings"
+    ],
+    "githubUrl": "https://github.com/nallarahul/Autonomous-QA-Agent",
+    "liveDemoUrl": "",
+    "highlights": [
+      "RAG-based technical documentation ingestion",
+      "Automated hallucination-resistant test scenario generation",
+      "Dual-agent architecture for autonomous QA",
+      "HTML DOM analysis for Selenium script generation",
+      "40% reduction in manual test creation effort",
+      "FastAPI backend with interactive Streamlit interface"
+    ],
+    "terminalLogs": [
+      {
+        "text": "[QA-AGENT] Initializing autonomous testing pipeline...",
+        "color": "text-steel-400"
+      },
+      {
+        "text": "[RAG] Ingesting technical documentation into vector store...",
+        "color": "text-steel-400"
+      },
+      {
+        "text": "[CHROMADB] Vector embeddings indexed successfully",
+        "color": "text-amber-500/80"
+      },
+      {
+        "text": "[AGENT-1] Generating test scenarios from retrieved context...",
+        "color": "text-steel-400"
+      },
+      {
+        "text": "[AGENT-2] Analyzing HTML DOM and generating Selenium scripts...",
+        "color": "text-steel-400"
+      }
+    ]
+  },
+  {
+    "id": "intelligent-traffic-control",
+    "title": "Intelligent Traffic Control System",
+    "subtitle": "Deep Reinforcement Learning Based Adaptive Traffic Control",
+    "category": "ai",
+    "categoryLabel": "Reinforcement Learning",
+    "badge": "REINFORCEMENT LEARNING",
+    "summary": "A reinforcement learning-based traffic management system that dynamically controls traffic signals using real-time simulation data.",
+    "problemSolved": "Static traffic signal timings cannot effectively respond to changing traffic conditions. The system dynamically adapts signal control based on live traffic information.",
+    "technicalChallenge": "Training and validating a reinforcement learning agent across complex urban traffic simulations while continuously feeding real-time traffic data through the SUMO TraCI API.",
+    "outcomeKey": "Reduced average vehicle waiting time by over 75% in simulated environments using adaptive reinforcement learning-based traffic signal control.",
+    "techStack": [
+      "Python",
+      "TensorFlow",
+      "Reinforcement Learning",
+      "SUMO",
+      "TraCI API"
+    ],
+    "githubUrl": "https://github.com/nallarahul/Reinforcement-learning-based-traffic-control-system",
+    "liveDemoUrl": "",
+    "highlights": [
+      "Adaptive traffic signal control using reinforcement learning",
+      "Over 75% reduction in simulated vehicle wait times",
+      "3+ complex urban traffic simulations",
+      "Simulations containing 1000+ traffic agents",
+      "Real-time traffic data processing through SUMO TraCI API"
+    ],
+    "terminalLogs": [
+      {
+        "text": "[SUMO] Initializing urban traffic simulation...",
+        "color": "text-steel-400"
+      },
+      {
+        "text": "[TRA-CI] Streaming real-time traffic state data...",
+        "color": "text-steel-400"
+      },
+      {
+        "text": "[DQN] Reinforcement learning agent evaluating signal state...",
+        "color": "text-amber-500/80"
+      },
+      {
+        "text": "[CONTROL] Adaptive traffic signal decision executed",
+        "color": "text-steel-400"
+      },
+      {
+        "text": "[RESULT] Average vehicle wait time reduced by 75%+",
+        "color": "text-steel-400"
+      }
+    ]
+  },
+  {
+    "id": "hedwig",
+    "title": "Hedwig",
+    "subtitle": "Real-Time Full-Stack Chat Application",
+    "category": "web-dev",
+    "categoryLabel": "Full-Stack Development",
+    "badge": "REAL-TIME",
+    "summary": "A real-time chat application built for seamless communication with low-latency bi-directional messaging, image sharing, and a responsive user interface.",
+    "problemSolved": "Traditional request-response communication does not provide the responsiveness required for real-time conversations. Hedwig enables persistent bi-directional communication between users.",
+    "technicalChallenge": "Implementing low-latency real-time messaging while managing concurrent connections, image storage, persistent application data, and secure responsive access across devices.",
+    "outcomeKey": "Built and deployed a real-time communication platform supporting over 20 active users with bi-directional messaging.",
+    "techStack": [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Socket.io"
+    ],
+    "githubUrl": "https://github.com/nallarahul/Hedwig",
+    "liveDemoUrl": "https://hedwig-chat.vercel.app/",
+    "highlights": [
+      "Real-time bi-directional messaging with Socket.io",
+      "Support for 20+ active users",
+      "Integrated image storage and sharing",
+      "Responsive interface across devices",
+      "Node.js and Express.js backend",
+      "MongoDB-based persistent data storage"
+    ],
+    "terminalLogs": [
+      {
+        "text": "[HEDWIG] Initializing real-time communication server...",
+        "color": "text-steel-400"
+      },
+      {
+        "text": "[SOCKET.IO] WebSocket connection established",
+        "color": "text-amber-500/80"
+      },
+      {
+        "text": "[MONGODB] Chat database connection established",
+        "color": "text-steel-400"
+      },
+      {
+        "text": "[MESSAGING] Bi-directional message channel active",
+        "color": "text-steel-400"
+      },
+      {
+        "text": "[SYSTEM] Real-time chat service ready",
+        "color": "text-steel-400"
+      }
     ]
   }
 ]
