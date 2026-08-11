@@ -79,7 +79,7 @@ export default function ContactSection() {
             >
               {[
                 { href: `mailto:${portfolioData.personal.email}`, label: 'DIRECT EMAIL', value: portfolioData.personal.email, Icon: Mail },
-                { href: portfolioData.personal.github, label: 'GITHUB', value: 'github.com/rahul-nalla', Icon: Github },
+                { href: portfolioData.personal.github, label: 'GITHUB', value: 'github.com/nallarahul', Icon: Github },
                 { href: portfolioData.personal.linkedin, label: 'LINKEDIN', value: 'linkedin.com/in/rahul-nalla', Icon: Linkedin },
               ].map(({ href, label, value, Icon }) => (
                 <motion.a
