@@ -37,7 +37,7 @@ export default function SkillsSection() {
   const row2Loop = [...row2Skills, ...row2Skills, ...row2Skills, ...row2Skills];
 
   return (
-    <section id="skills" className="py-24 relative border-b border-bg-border/50 overflow-hidden">
+    <section id="skills" className="py-20 relative border-b border-bg-border/50 overflow-hidden">
       {/* Background Architectural Grid */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e202e0a_1px,transparent_1px),linear-gradient(to_bottom,#1e202e0a_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none" />
 
@@ -54,7 +54,7 @@ export default function SkillsSection() {
             </BlurReveal>
           </div>
           <BlurReveal delay={0.2} className="font-mono text-xs text-steel-400 mt-4 md:mt-0 max-w-md leading-relaxed">
-            Loaded dynamically from JSON. Transparent icon logos with automated infinite scrolling across languages, frameworks, databases, and DevOps tools.
+            A curated stack of languages, frameworks, databases, and tools I use to build reliable, scalable software.
           </BlurReveal>
         </div>
       </div>
