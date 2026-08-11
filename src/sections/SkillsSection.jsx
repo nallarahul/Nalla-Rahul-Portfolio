@@ -73,7 +73,7 @@ export default function SkillsSection() {
             transition={{
               repeat: Infinity,
               ease: 'linear',
-              duration: 50,
+              duration: 70,
             }}
           >
             {row1Loop.map((skill, idx) => (
@@ -90,7 +90,7 @@ export default function SkillsSection() {
             transition={{
               repeat: Infinity,
               ease: 'linear',
-              duration: 50,
+              duration: 70,
             }}
           >
             {row2Loop.map((skill, idx) => (

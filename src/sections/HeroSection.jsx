@@ -237,7 +237,7 @@ export default function HeroSection() {
                     style={prefersReduced ? {} : { x: portraitOffsetX, y: portraitOffsetY }}
                   >
                     <img
-                      src="/developer_portrait.png"
+                      src="/my-img.jpg"
                       alt={portfolioData.personal.avatarAlt}
                       className="w-full h-full object-cover object-top filter grayscale contrast-105 hover:grayscale-0 transition-all duration-700 ease-out"
                       loading="eager"
@@ -259,7 +259,6 @@ export default function HeroSection() {
                     <span className="text-steel-400 text-[10px] block">ENGINEERING PORTRAIT</span>
                     <span className="text-steel-100 font-semibold">RAHUL NALLA</span>
                   </div>
-                  <span className="text-amber-500 text-[10px]">FIG. 01</span>
                 </motion.div>
               </div>
             </div>
